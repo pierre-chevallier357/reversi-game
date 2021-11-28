@@ -1,0 +1,6 @@
+<app-plateau *ngIf = " obs | async as G "
+             [board]    = "G.board"
+             [turn]     = "G.turn"
+             [playable] = "G.playable"
+             (play)     = "play($event)"
+></app-plateau>
